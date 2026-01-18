@@ -1,0 +1,10 @@
+.testBenchTestEntry {
+    margin-bottom: 0.5em;
+    background-color:azure;
+    padding: 0.5em;
+    margin-right: 0.5em;
+}
+
+.testEntryRunButton {
+    border-radius: 12px;
+}
