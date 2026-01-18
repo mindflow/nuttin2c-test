@@ -1,5 +1,5 @@
 import { Logger, Method } from "coreutil_v1";
-import { TemplateComponentFactory } from "justright_core_v1";
+import { TemplateComponentFactory } from "nuttin2c_core_v1";
 import { InjectionPoint, Provider } from "mindi_v1";
 import { TestBench, TestClassResult } from "testbench_v1";
 import { TestBenchView } from "./testBenchView/testBenchView.js";

@@ -1,10 +1,10 @@
-import { CanvasStyles, TemplateComponentFactory, StyleAccessor } from "justright_core_v1";
+import { CanvasStyles, TemplateComponentFactory, StyleAccessor } from "nuttin2c_core_v1";
 import { InjectionPoint } from "mindi_v1";
 
 export class LineEntry {
 
-	static get TEMPLATE_URL() { return "/assets/justrightjs-test/lineEntry.html"; }
-    static get STYLES_URL() { return "/assets/justrightjs-test/lineEntry.css"; }
+	static get TEMPLATE_URL() { return "/assets/nuttin2c-test/lineEntry.html"; }
+    static get STYLES_URL() { return "/assets/nuttin2c-test/lineEntry.css"; }
     
     /**
      * 

@@ -1,12 +1,12 @@
 import { Method } from "coreutil_v1";
-import { CanvasStyles, TemplateComponentFactory, StyleAccessor } from "justright_core_v1";
+import { CanvasStyles, TemplateComponentFactory, StyleAccessor } from "nuttin2c_core_v1";
 import { InjectionPoint } from "mindi_v1";
 import { TestClassState, TestTrigger } from "testbench_v1";
 
 export class TestEntryFunction {
 
-	static get TEMPLATE_URL() { return "/assets/justrightjs-test/testEntryFunction.html"; }
-    static get STYLES_URL() { return "/assets/justrightjs-test/testEntryFunction.css"; }
+	static get TEMPLATE_URL() { return "/assets/nuttin2c-test/testEntryFunction.html"; }
+    static get STYLES_URL() { return "/assets/nuttin2c-test/testEntryFunction.css"; }
     
     /**
      * 

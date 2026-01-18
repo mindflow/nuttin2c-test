@@ -1,5 +1,5 @@
 import { Map } from "coreutil_v1";
-import { CanvasStyles, TemplateComponentFactory } from "justright_core_v1";
+import { CanvasStyles, TemplateComponentFactory } from "nuttin2c_core_v1";
 import { InjectionPoint } from "mindi_v1";
 import { TestClassState, TestTrigger } from "testbench_v1";
 import { LineEntry } from "./lineEntry/lineEntry.js";
@@ -7,8 +7,8 @@ import { TestEntry } from "./testEntry/testEntry.js"
 
 export class TestBenchView {
 
-	static get TEMPLATE_URL() { return "/assets/justrightjs-test/testBenchView.html"; }
-    static get STYLES_URL() { return "/assets/justrightjs-test/testBenchView.css"; }
+	static get TEMPLATE_URL() { return "/assets/nuttin2c-test/testBenchView.html"; }
+    static get STYLES_URL() { return "/assets/nuttin2c-test/testBenchView.css"; }
     
     /** 
      * @param {TestTrigger} testTrigger 

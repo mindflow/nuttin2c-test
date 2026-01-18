@@ -5,10 +5,10 @@ import copy from 'rollup-plugin-copy';
 
 export default [{
     input: "src/**/*.js",
-    external: [ 'coreutil_v1', 'justright_core_v1', 'mindi_v1', 'testbench_v1' ],
+    external: [ 'coreutil_v1', 'nuttin2c_core_v1', 'mindi_v1', 'testbench_v1' ],
     output: {
-        name: 'justright_test_v1',
-        file: "dist/jsm/justright_test_v1.js",
+        name: 'nuttin2c_test_v1',
+        file: "dist/jsm/nuttin2c_test_v1.js",
         sourcemap: "inline",
         format: "es"
     },
@@ -18,7 +18,7 @@ export default [{
             'coreutil_v1': './coreutil_v1.js',
             'testbench_v1': './testbench_v1.js',
             'mindi_v1': './mindi_v1.js',
-            'justright_core_v1': './justright_core_v1.js',
+            'nuttin2c_core_v1': './nuttin2c_core_v1.js',
             replaceStage: 'renderChunk'
         })
     ]
@@ -26,8 +26,8 @@ export default [{
     input: "src/**/*.js",
     external: [ 'coreutil_v1' ],
     output: {
-        name: 'justright_test_v1',
-        file: "dist/jsm/justright_test_v1.min.js",
+        name: 'nuttin2c_test_v1',
+        file: "dist/jsm/nuttin2c_test_v1.min.js",
         format: "es"
     },
     plugins: [
@@ -36,7 +36,7 @@ export default [{
             'coreutil_v1': './coreutil_v1.js',
             'testbench_v1': './testbench_v1.js',
             'mindi_v1': './mindi_v1.js',
-            'justright_core_v1': './justright_core_v1.js',
+            'nuttin2c_core_v1': './nuttin2c_core_v1.js',
             replaceStage: 'renderChunk'
         }),
         terser()
@@ -45,8 +45,8 @@ export default [{
     input: "src/**/*.js",
     external: [ 'coreutil_v1' ],
     output: {
-        name: 'justright_test_v1',
-        file: "dist/cjs/justright_test_v1.js",
+        name: 'nuttin2c_test_v1',
+        file: "dist/cjs/nuttin2c_test_v1.js",
         sourcemap: "inline",
         format: "cjs"
     },
@@ -54,8 +54,8 @@ export default [{
         multi(),
         copy({
             targets: [
-              { src: 'src/**/*.css', dest: 'dist/assets/justrightjs-test' },
-              { src: 'src/**/*.html', dest: 'dist/assets/justrightjs-test' }
+              { src: 'src/**/*.css', dest: 'dist/assets/nuttin2c-test' },
+              { src: 'src/**/*.html', dest: 'dist/assets/nuttin2c-test' }
             ],
             verbose: true
         })

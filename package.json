@@ -1,9 +1,9 @@
 {
   "type": "module",
-  "name": "justright_test_v1",
+  "name": "nuttin2c_test_v1",
   "version": "1.0.0",
-  "description": "Just Right JS Test",
-  "main": "./dist/jsm/justright_test_v1.js",
+  "description": "nuttin2c Test",
+  "main": "./dist/jsm/nuttin2c_test_v1.js",
   "scripts": {
     "build": "node ./node_modules/rollup/dist/bin/rollup -c",
     "watch": "node ./node_modules/rollup/dist/bin/rollup -c --watch"
@@ -12,7 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "coreutil_v1": "file:../coreutiljs",
-    "justright_core_v1": "file:../justrightjs-core",
+    "nuttin2c_core_v1": "file:../nuttin2c-core",
     "mindi_v1": "file:../mindijs",
     "testbench_v1": "file:../testbenchjs",
     "containerbridge_v1": "file:../containerbridgejs/webbrowserbridge",
