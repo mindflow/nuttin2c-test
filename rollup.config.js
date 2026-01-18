@@ -5,7 +5,7 @@ import copy from 'rollup-plugin-copy';
 
 export default [{
     input: "src/**/*.js",
-    external: [ 'coreutil_v1', 'nuttin2c_core_v1', 'mindi_v1', 'testbench_v1' ],
+    external: [ 'coreutil_v1', 'nuttin2c-core_v1', 'mindi_v1', 'testbench_v1' ],
     output: {
         name: 'nuttin2c_test_v1',
         file: "dist/jsm/nuttin2c_test_v1.js",
@@ -18,7 +18,7 @@ export default [{
             'coreutil_v1': './coreutil_v1.js',
             'testbench_v1': './testbench_v1.js',
             'mindi_v1': './mindi_v1.js',
-            'nuttin2c_core_v1': './nuttin2c_core_v1.js',
+            'nuttin2c-core_v1': './nuttin2c-core_v1.js',
             replaceStage: 'renderChunk'
         })
     ]
@@ -36,7 +36,7 @@ export default [{
             'coreutil_v1': './coreutil_v1.js',
             'testbench_v1': './testbench_v1.js',
             'mindi_v1': './mindi_v1.js',
-            'nuttin2c_core_v1': './nuttin2c_core_v1.js',
+            'nuttin2c-core_v1': './nuttin2c-core_v1.js',
             replaceStage: 'renderChunk'
         }),
         terser()

@@ -1,5 +1,5 @@
 import { List } from "coreutil_v1";
-import { CanvasStyles, TemplateComponentFactory, Style } from "nuttin2c_core_v1";
+import { CanvasStyles, TemplateComponentFactory, Style } from "nuttin2c-core_v1";
 import { InjectionPoint, Provider } from "mindi_v1";
 import { TestClassState, TestTrigger } from "testbench_v1";
 import { TestEntryFunction } from "../testEntryFunction/testEntryFunction";

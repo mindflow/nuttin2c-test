@@ -3,7 +3,7 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var coreutil_v1 = require('coreutil_v1');
-var nuttin2c_core_v1 = require('nuttin2c_core_v1');
+var nuttin2c-core_v1 = require('nuttin2c-core_v1');
 var mindi_v1 = require('mindi_v1');
 var testbench_v1 = require('testbench_v1');
 
@@ -20,7 +20,7 @@ class LineEntry {
 	constructor(line, color = null) {
 
 		/** @type {TemplateComponentFactory} */
-        this.componentFactory = mindi_v1.InjectionPoint.instance(nuttin2c_core_v1.TemplateComponentFactory);
+        this.componentFactory = mindi_v1.InjectionPoint.instance(nuttin2c-core_v1.TemplateComponentFactory);
 
         /** @type {String} */
         this.line = line;
@@ -30,10 +30,10 @@ class LineEntry {
 
 	postConfig() {
 		this.component = this.componentFactory.create(LineEntry);
-        nuttin2c_core_v1.CanvasStyles.enableStyle(LineEntry.name);
+        nuttin2c-core_v1.CanvasStyles.enableStyle(LineEntry.name);
         this.component.setChild("lineEntry", this.line);
         if (this.color) {
-            nuttin2c_core_v1.StyleAccessor.from(this.component.get("lineEntry"))
+            nuttin2c-core_v1.StyleAccessor.from(this.component.get("lineEntry"))
                 .set("color", this.color);
         }
     }
@@ -54,7 +54,7 @@ class TestEntryFunction {
 	constructor(testClass, testFunction, testTrigger) {
 
 		/** @type {TemplateComponentFactory} */
-        this.componentFactory = mindi_v1.InjectionPoint.instance(nuttin2c_core_v1.TemplateComponentFactory);
+        this.componentFactory = mindi_v1.InjectionPoint.instance(nuttin2c-core_v1.TemplateComponentFactory);
 
         /** @type {Object} */
         this.testClass = testClass;
@@ -68,7 +68,7 @@ class TestEntryFunction {
 
 	postConfig() {
 		this.component = this.componentFactory.create(TestEntryFunction);
-        nuttin2c_core_v1.CanvasStyles.enableStyle(TestEntryFunction.name);
+        nuttin2c-core_v1.CanvasStyles.enableStyle(TestEntryFunction.name);
         this.component.setChild("testEntryFunctionName", this.testFunction.name);
 
         this.component.get("runButton").listenTo("click", this.runClicked, this);
@@ -91,25 +91,25 @@ class TestEntryFunction {
     }
 
     fail() {
-        nuttin2c_core_v1.StyleAccessor.from(this.component.get("testEntryFunctionName"))
+        nuttin2c-core_v1.StyleAccessor.from(this.component.get("testEntryFunctionName"))
             .set("font-weight", "bold")
             .set("color", "red");
     }
 
     succeed() {
-        nuttin2c_core_v1.StyleAccessor.from(this.component.get("testEntryFunctionName"))
+        nuttin2c-core_v1.StyleAccessor.from(this.component.get("testEntryFunctionName"))
             .set("font-weight", "bold")
             .set("color", "green");
     }
 
     running() {
-        nuttin2c_core_v1.StyleAccessor.from(this.component.get("testEntryFunctionName"))
+        nuttin2c-core_v1.StyleAccessor.from(this.component.get("testEntryFunctionName"))
             .set("font-weight", "bold")
             .set("color", "black");
     }
 
     reset() {
-        nuttin2c_core_v1.StyleAccessor.from(this.component.get("testEntryFunctionName")).clear();
+        nuttin2c-core_v1.StyleAccessor.from(this.component.get("testEntryFunctionName")).clear();
     }
 }
 
@@ -126,7 +126,7 @@ class TestEntry {
 	constructor(testClass, testTrigger) {
 
 		/** @type {TemplateComponentFactory} */
-        this.componentFactory = mindi_v1.InjectionPoint.instance(nuttin2c_core_v1.TemplateComponentFactory);
+        this.componentFactory = mindi_v1.InjectionPoint.instance(nuttin2c-core_v1.TemplateComponentFactory);
         
         /** @type {Provider<TestEntryFunction>} */
         this.testEntryFunctionProvider = mindi_v1.InjectionPoint.provider(TestEntryFunction);
@@ -145,7 +145,7 @@ class TestEntry {
 
 	postConfig() {
 		this.component = this.componentFactory.create(TestEntry);
-        nuttin2c_core_v1.CanvasStyles.enableStyle(TestEntry.name);
+        nuttin2c-core_v1.CanvasStyles.enableStyle(TestEntry.name);
         this.component.setChild("testEntryName", this.testClass.name);
 
         this.component.get("runButton").listenTo("click", this.runClicked, this);
@@ -190,19 +190,19 @@ class TestEntry {
 
     fail() {
         this.failed = true;
-        nuttin2c_core_v1.Style.from(this.component.get("testEntryName"))
+        nuttin2c-core_v1.Style.from(this.component.get("testEntryName"))
             .set("font-weight", "bold")
             .set("color", "red");
     }
 
     succeed() {
-        nuttin2c_core_v1.Style.from(this.component.get("testEntryName"))
+        nuttin2c-core_v1.Style.from(this.component.get("testEntryName"))
             .set("font-weight", "bold")
             .set("color", "green");
     }
 
     running() {
-        nuttin2c_core_v1.Style.from(this.component.get("testEntryName"))
+        nuttin2c-core_v1.Style.from(this.component.get("testEntryName"))
             .set("font-weight", "bold")
             .set("color", "black");
     }
@@ -213,7 +213,7 @@ class TestEntry {
             testEntryFunction.reset();
             return true;
         },this);
-        nuttin2c_core_v1.Style.from(this.component.get("testEntryName")).clear();
+        nuttin2c-core_v1.Style.from(this.component.get("testEntryName")).clear();
     }
 }
 
@@ -228,7 +228,7 @@ class TestBenchView {
 	constructor(testTrigger) {
 
 		/** @type {TemplateComponentFactory} */
-        this.componentFactory = mindi_v1.InjectionPoint.instance(nuttin2c_core_v1.TemplateComponentFactory);
+        this.componentFactory = mindi_v1.InjectionPoint.instance(nuttin2c-core_v1.TemplateComponentFactory);
         
         /** @type {TestTrigger} */
         this.testTrigger = testTrigger;
@@ -239,7 +239,7 @@ class TestBenchView {
 
 	postConfig() {
 		this.component = this.componentFactory.create(TestBenchView);
-        nuttin2c_core_v1.CanvasStyles.enableStyle(TestBenchView.name);
+        nuttin2c-core_v1.CanvasStyles.enableStyle(TestBenchView.name);
 
 		this.component.get("clearButton").listenTo("click", this.clearClicked, this);
 		this.component.get("runAllButton").listenTo("click", this.runAllClicked, this);
@@ -360,7 +360,7 @@ class TestBenchUi {
         this.testTrigger = new TestBenchTestTrigger();
 
 		/** @type {TemplateComponentFactory} */
-        this.componentFactory = mindi_v1.InjectionPoint.instance(nuttin2c_core_v1.TemplateComponentFactory);
+        this.componentFactory = mindi_v1.InjectionPoint.instance(nuttin2c-core_v1.TemplateComponentFactory);
 
         /** @type {TestBenchView} */
         this.testBenchView = mindi_v1.InjectionPoint.instance(TestBenchView, [this.testTrigger]);

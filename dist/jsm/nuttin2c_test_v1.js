@@ -1,5 +1,5 @@
 import { List, Map, Method, Logger } from './coreutil_v1.js';
-import { TemplateComponentFactory, CanvasStyles, StyleAccessor, Style } from './nuttin2c_core_v1.js';
+import { TemplateComponentFactory, CanvasStyles, StyleAccessor, Style } from './nuttin2c-core_v1.js';
 import { InjectionPoint, MindiConfig, InstancePostConfigTrigger, MindiInjector } from './mindi_v1.js';
 import { TestClassState, TestTrigger, ObjectProvider, TestBench } from './testbench_v1.js';
 
