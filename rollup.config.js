@@ -7,8 +7,8 @@ export default [{
     input: "src/**/*.js",
     external: [ 'coreutil_v1', 'nuttin2c-core_v1', 'mindi_v1', 'testbench_v1' ],
     output: {
-        name: 'nuttin2c_test_v1',
-        file: "dist/jsm/nuttin2c_test_v1.js",
+        name: 'nuttin2c-test_v1',
+        file: "dist/jsm/nuttin2c-test_v1.js",
         sourcemap: "inline",
         format: "es"
     },
@@ -26,8 +26,8 @@ export default [{
     input: "src/**/*.js",
     external: [ 'coreutil_v1' ],
     output: {
-        name: 'nuttin2c_test_v1',
-        file: "dist/jsm/nuttin2c_test_v1.min.js",
+        name: 'nuttin2c-test_v1',
+        file: "dist/jsm/nuttin2c-test_v1.min.js",
         format: "es"
     },
     plugins: [
@@ -45,8 +45,8 @@ export default [{
     input: "src/**/*.js",
     external: [ 'coreutil_v1' ],
     output: {
-        name: 'nuttin2c_test_v1',
-        file: "dist/cjs/nuttin2c_test_v1.js",
+        name: 'nuttin2c-test_v1',
+        file: "dist/cjs/nuttin2c-test_v1.js",
         sourcemap: "inline",
         format: "cjs"
     },
