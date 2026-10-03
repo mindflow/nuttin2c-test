@@ -5,8 +5,8 @@ import { TestClassState, TestTrigger, ObjectProvider, TestBench } from './testbe
 
 class LineEntry {
 
-	static get TEMPLATE_URL() { return "/assets/nuttin2c-test/lineEntry.html"; }
-    static get STYLES_URL() { return "/assets/nuttin2c-test/lineEntry.css"; }
+	static get TEMPLATE_URL() { return "/assets/lineEntry.html"; }
+    static get STYLES_URL() { return "/assets/lineEntry.css"; }
     
     /**
      * 
@@ -38,8 +38,8 @@ class LineEntry {
 
 class TestEntryFunction {
 
-	static get TEMPLATE_URL() { return "/assets/nuttin2c-test/testEntryFunction.html"; }
-    static get STYLES_URL() { return "/assets/nuttin2c-test/testEntryFunction.css"; }
+	static get TEMPLATE_URL() { return "/assets/testEntryFunction.html"; }
+    static get STYLES_URL() { return "/assets/testEntryFunction.css"; }
     
     /**
      * 
@@ -111,8 +111,8 @@ class TestEntryFunction {
 
 class TestEntry {
 
-	static get TEMPLATE_URL() { return "/assets/nuttin2c-test/testEntry.html"; }
-    static get STYLES_URL() { return "/assets/nuttin2c-test/testEntry.css"; }
+	static get TEMPLATE_URL() { return "/assets/testEntry.html"; }
+    static get STYLES_URL() { return "/assets/testEntry.css"; }
     
     /**
      * 
@@ -215,8 +215,8 @@ class TestEntry {
 
 class TestBenchView {
 
-	static get TEMPLATE_URL() { return "/assets/nuttin2c-test/testBenchView.html"; }
-    static get STYLES_URL() { return "/assets/nuttin2c-test/testBenchView.css"; }
+	static get TEMPLATE_URL() { return "/assets/testBenchView.html"; }
+    static get STYLES_URL() { return "/assets/testBenchView.css"; }
     
     /** 
      * @param {TestTrigger} testTrigger 

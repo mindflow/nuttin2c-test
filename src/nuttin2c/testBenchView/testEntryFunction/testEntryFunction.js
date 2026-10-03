@@ -5,8 +5,8 @@ import { TestClassState, TestTrigger } from "testbench_v1";
 
 export class TestEntryFunction {
 
-	static get TEMPLATE_URL() { return "/assets/nuttin2c-test/testEntryFunction.html"; }
-    static get STYLES_URL() { return "/assets/nuttin2c-test/testEntryFunction.css"; }
+	static get TEMPLATE_URL() { return "/assets/testEntryFunction.html"; }
+    static get STYLES_URL() { return "/assets/testEntryFunction.css"; }
     
     /**
      * 

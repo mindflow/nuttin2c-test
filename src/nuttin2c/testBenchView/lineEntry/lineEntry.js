@@ -3,8 +3,8 @@ import { InjectionPoint } from "mindi_v1";
 
 export class LineEntry {
 
-	static get TEMPLATE_URL() { return "/assets/nuttin2c-test/lineEntry.html"; }
-    static get STYLES_URL() { return "/assets/nuttin2c-test/lineEntry.css"; }
+	static get TEMPLATE_URL() { return "/assets/lineEntry.html"; }
+    static get STYLES_URL() { return "/assets/lineEntry.css"; }
     
     /**
      * 

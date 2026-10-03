@@ -6,8 +6,8 @@ import { TestEntryFunction } from "../testEntryFunction/testEntryFunction";
 
 export class TestEntry {
 
-	static get TEMPLATE_URL() { return "/assets/nuttin2c-test/testEntry.html"; }
-    static get STYLES_URL() { return "/assets/nuttin2c-test/testEntry.css"; }
+	static get TEMPLATE_URL() { return "/assets/testEntry.html"; }
+    static get STYLES_URL() { return "/assets/testEntry.css"; }
     
     /**
      * 

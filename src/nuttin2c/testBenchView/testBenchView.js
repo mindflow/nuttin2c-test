@@ -7,8 +7,8 @@ import { TestEntry } from "./testEntry/testEntry.js"
 
 export class TestBenchView {
 
-	static get TEMPLATE_URL() { return "/assets/nuttin2c-test/testBenchView.html"; }
-    static get STYLES_URL() { return "/assets/nuttin2c-test/testBenchView.css"; }
+	static get TEMPLATE_URL() { return "/assets/testBenchView.html"; }
+    static get STYLES_URL() { return "/assets/testBenchView.css"; }
     
     /** 
      * @param {TestTrigger} testTrigger 
